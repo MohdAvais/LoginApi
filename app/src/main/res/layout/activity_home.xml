@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/mek_logo"/>
+
+        <TextView
+            android:id="@+id/welcomeTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WElCOME TO MEKVAHAN"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="25sp"
+            android:textColor="#F10202"
+            android:gravity="center"
+            android:layout_margin="30dp"/>
+
+
+        <Button
+            android:id="@+id/logOutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="Logout"
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:background="#F10202"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

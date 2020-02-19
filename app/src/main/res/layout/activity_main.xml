@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/mek_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/mek_logo"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/loginView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corner_bg"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/logo">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enter phone number to continue"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="#000000"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10 digit mobile number"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"/>
+
+                <EditText
+                    android:id="@+id/mobileNoEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:inputType="number"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="10sp"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"/>
+
+                <EditText
+                    android:id="@+id/passwordEt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:inputType="textPassword"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="12sp"
+                    android:textColor="#FF9800"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginRight="20dp"/>
+
+                <Button
+                    android:id="@+id/loginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Login"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:background="#F10202"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/careerLogo"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/asset_careers"
+                android:layout_below="@+id/loginView"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/careertv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Careers"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_below="@+id/loginView"
+                android:layout_toRightOf="@id/careerLogo"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/navigate_next_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/loginView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="334dp"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="47dp"
+                android:layout_marginRight="47dp"
+                android:layout_toRightOf="@+id/careertv"
+                android:src="@drawable/ic_navigate_next" />
+
+            <ImageView
+                android:id="@+id/faqslogo"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/asset_faqs"
+                android:layout_below="@+id/careerLogo"
+                android:layout_marginLeft="30dp"/>
+
+            <TextView
+                android:id="@+id/faqsTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAQ's"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_below="@+id/careertv"
+                android:layout_toRightOf="@id/careerLogo"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:id="@+id/navigate_next_imgb"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/navigate_next_img"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginStart="335dp"
+                android:layout_marginLeft="176dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="46dp"
+                android:layout_marginRight="46dp"
+                android:layout_toRightOf="@+id/careertv"
+                android:src="@drawable/ic_navigate_next" />
+
+            <ImageView
+                android:id="@+id/feedback_logo"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/faqslogo"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:src="@drawable/asset_feedback" />
+
+            <TextView
+                android:id="@+id/feedbackTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Send Feedback"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:layout_below="@id/faqsTv"
+                android:layout_toRightOf="@id/careerLogo"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"/>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="126dp"
+                android:layout_marginLeft="126dp"
+                android:layout_marginEnd="43dp"
+                android:layout_marginTop="16dp"
+                android:layout_toEndOf="@+id/feedbackTv"
+                android:layout_toRightOf="@id/feedbackTv"
+                android:layout_below="@id/navigate_next_imgb"
+                android:src="@drawable/ic_navigate_next" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
